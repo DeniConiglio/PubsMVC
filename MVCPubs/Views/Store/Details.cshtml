@@ -1,0 +1,46 @@
+﻿@model MVCPubs.Models.Stores
+
+@{
+    ViewBag.Title = "Details";
+}
+<fieldset>
+    <legend>Detalles</legend>
+    <div>
+        @Html.DisplayNameFor(model => model.StorName)
+    </div>
+    <div>
+        @Html.DisplayFor(model => model.StorName)
+    </div>
+
+    <div>
+        @Html.DisplayNameFor(model => model.StorAddress)
+    </div>
+    <div>
+        @Html.DisplayFor(model => model.StorAddress)
+    </div>
+
+    <div>
+        @Html.DisplayNameFor(model => model.City)
+    </div>
+    <div>
+        @Html.DisplayFor(model => model.City)
+    </div>
+    <div>
+        @Html.DisplayNameFor(model => model.State)
+    </div>
+    <div>
+        @Html.DisplayFor(model => model.State)
+    </div>
+    <div>
+        @Html.DisplayNameFor(model => model.Zip)
+    </div>
+    <div>
+        @Html.DisplayFor(model => model.Zip)
+    </div>
+
+
+
+</fieldset>
+<p>
+    @Html.ActionLink("Volver a Lista", "Index", "Store")
+</p>

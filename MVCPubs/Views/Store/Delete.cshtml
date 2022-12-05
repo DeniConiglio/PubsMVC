@@ -1,0 +1,24 @@
+﻿@model MVCPubs.Models.Stores
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Eliminar store</h2>
+
+<p>Confirma la eliminacion de la store?</p>
+
+@using (Html.BeginForm("Delete", "Store", FormMethod.Post))
+{
+        <div>
+            <span>@Html.DisplayNameFor(model => model.StorName)</span>
+            <span>@Html.DisplayFor(model => model.StorAddress)</span>
+            <span>@Html.DisplayNameFor(model => model.City)</span>
+            <span>@Html.DisplayFor(model => model.State)</span>
+            <span>@Html.DisplayFor(model => model.Zip)</span>
+        </div>
+        <input type="submit" value="Delete" />
+}
+
+<p>
+    @Html.ActionLink("Volver a lista", "Index", "Store")
+</p>

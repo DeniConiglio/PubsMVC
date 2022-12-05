@@ -1,0 +1,41 @@
+﻿﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: pink;
+    height: 150px;
+    text-align:center;
+}
+
+section {
+    display: flex;
+    width: 100%;
+
+}
+
+
+
+.container {
+    background-color: black;
+    height: 400px;
+    width: 100%;
+    padding: 5%;
+    text-align:center;
+    justify-content:center;
+    color: white;
+}
+
+a{
+    color:aqua;
+}
+a:hover {
+    color: deeppink;
+}
+
+footer {
+    background-color: darkgrey;
+    height: 50px;
+}
